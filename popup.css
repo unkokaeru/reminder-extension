@@ -1,0 +1,89 @@
+/* Overall body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 10px;
+  /* Removed the padding here to allow full-width usage */
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Style for task links */
+#tasksList a {
+  display: block;
+  padding: 10px 15px;
+  /* Keeping padding for space inside the link elements */
+  margin: 10px auto;
+  /* Centered margin for individual task links */
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hover and focus styles for task links */
+#tasksList a:hover,
+#tasksList a:focus {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Style adjustments for the file input */
+#fileInput {
+  display: block;
+  width: 100%;
+  /* Adjusted to use full width of its container */
+  padding: 10px;
+  margin: 0 auto 20px;
+  /* Centered margin for the file input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#fileInput:hover {
+  border-color: #007bff;
+}
+
+/* Focus styles for inputs */
+#fileInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Style for the "No tasks" message */
+.no-tasks {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  /* Ensure this message is also centered */
+}
+
+/* Center content within the parent */
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Style for visited task links */
+#tasksList a.visited {
+  color: #757575;
+  /* Grey out visited links */
+  text-decoration: line-through;
+  /* Optional: adds a strike-through */
+}
